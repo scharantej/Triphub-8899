@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Travel Scheduler</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+<h1>Travel Scheduler</h1>
+<form action="/schedule" method="POST">
+<div class="form-group">
+<label for="departure">Departure:</label>
+<input type="text" class="form-control" id="departure" name="departure" required />
+</div>
+<div class="form-group">
+<label for="destination">Destination:</label>
+<input type="text" class="form-control" id="destination" name="destination" required />
+</div>
+<div class="form-group">
+<label for="date">Date of travel:</label>
+<input type="date" class="form-control" id="date" name="date" required />
+</div>
+<div class="form-group">
+<label for="mode">Mode of transport:</label>
+<select class="form-control" id="mode" name="mode" required>
+<option value="train">Train</option>
+<option value="bus">Bus</option>
+<option value="flight">Flight</option>
+<option value="donkey">Donkey</option>
+<option value="ferry">Ferry</option>
+<option value="bike">Bike</option>
+</select>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+
