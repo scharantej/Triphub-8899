@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Travel Scheduler</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+<h1>Travel Scheduler</h1>
+<h2>Schedule</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mode of transport</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+{% for option in selected_options %}
+<tr>
+<td>{{ option['mode'] }}</td>
+<td>{{ option['duration'] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>
+
